@@ -7,7 +7,7 @@ scrape_configs:
       - targets: ['localhost:9090']
 
   - job_name: 'booking-api'
-    scheme: http
+    scheme: https
     static_configs:
       - targets: ['booking-api.railway.internal:8080/metrics']
 
